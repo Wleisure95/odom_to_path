@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="odom_to_path" type="odom_to_path_sub" name="odom_name_to_path" output="screen">
+  <remap from= "/odom" to= "/odom_rf2o"/>
+  <remap from= "/odom_path" to= "/odom_path_name"/>
+  </node>
+  
+</launch>
